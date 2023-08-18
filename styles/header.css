@@ -1,0 +1,145 @@
+/* General */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 57px;
+
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: white;
+  border-bottom: 1px solid rgba(201, 201, 201, 0.7);
+}
+.left-section,
+.middle-section,
+.right-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Left section */
+.hamburger-menu {
+  height: 24px;
+  margin: 0 24px;
+}
+.yt-logo {
+  height: 20px;
+}
+
+/* Middle section */
+.middle-section {
+  flex: 1;
+  flex-shrink: 1;
+  margin-left: 60px;
+  max-width: 470px;
+}
+.searchbar {
+  height: 38px;
+  flex: 1;
+  width: 0;
+  padding: 0 0 0 12px;
+  font-size: 16px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 20px 0 0 20px;
+  box-shadow: inset 0 0 2px rgba(200, 200, 200, 0.7);
+}
+.search-btn {
+  height: 40px;
+  width: 64px;
+  background-color: rgb(235, 235, 235);
+  border: 1px solid rgb(200, 200, 200);
+  padding-right: 12px;
+  border-radius: 0 20px 20px 0;
+  margin-left: -1px;
+  transition: all 0.1s;
+}
+.search-btn:hover {
+  background-color: rgb(226, 226, 226);
+}
+.search-btn:active {
+  background-color: rgb(200, 200, 200);
+}
+.search-btn-logo {
+  height: 24px;
+  vertical-align: middle;
+  border-radius: 0 20px 20px 0;
+}
+.voice-search-btn {
+  height: 38px;
+  width: 38px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+  background-color: rgb(235, 235, 235);
+  transition: all 0.1s;
+}
+.voice-search-btn:hover {
+  background-color: rgb(226, 226, 226);
+}
+.voice-search-btn:active {
+  background-color: rgb(200, 200, 200);
+}
+.voice-search-btn-logo {
+  vertical-align: middle;
+  width: 80%;
+  height: 80%;
+}
+
+/* Right section */
+.right-section {
+  width: 182px;
+  margin: 0 24px 0 29px;
+}
+.right-section-icon {
+  height: 24px;
+}
+.my-profile {
+  height: 32px;
+  width: 32px;
+}
+.notifications-icon-container {
+  position: relative;
+}
+.notifications-count {
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  font-size: 10px;
+  color: white;
+  background-color: rgb(192, 0, 0);
+  padding: 2px 4px;
+  border-radius: 10px;
+}
+
+/* Tooltip styles */
+.tooltip-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -40px;
+  font-size: 12px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px 12px;
+  border-radius: 3px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.17s;
+}
+
+.tooltip-container:hover .tooltip {
+  opacity: 1;
+}
